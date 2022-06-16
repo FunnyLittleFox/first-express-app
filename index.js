@@ -11,6 +11,11 @@ app.get('/', function (req, res) {
     res.send('Hello world')
 })
 
+// Create a second route.
+app.get('/second', function (req, res) {
+    res.send('My Second Page!')
+})
+
 // Listen for connections
 app.listen(3000, function () {
     console.log('Starting up Foxnet') 
